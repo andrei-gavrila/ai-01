@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Python Debugger: main.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger (poetry / jupyter / lab)",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "module": "jupyter",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "lab",
+                "--allow-root"
+            ],
+            "justMyCode": false,
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
